@@ -1,38 +1,174 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: flex-start;
   flex-direction: column;
+  font-family: "Anton", sans-serif;
+}
+
+.pageContainer {
+  display: flex;
+  width: 100%;
+  height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: column;
+  /* border: 2px solid red; */
+  gap: 50px;
+  background: linear-gradient(145deg, #d8d8d8, #ffffff);
+}
+.mainRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.msg1 {
+  color: grey;
+  font-family: "Anton", sans-serif;
+  font-size: 25px;
+}
+span {
+  color: coral;
+}
+
+.mapContainer {
+  display: flex;
+  width: 750px;
+  height: 350px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7%;
+  top: 0px;
+}
+.clickable {
+  display: flex;
+  width: 900px;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  position: absolute;
+}
+
+.displayMap {
+  display: flex;
+  width: 900px;
+  height: 400px;
+  /* border: 3px solid red; */
+  border-radius: 40px;
+  filter: grayscale(100%);
+  padding: 10px;
+  /* box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff; */
+}
+.pin1 {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  right: 455px;
+  top: 110px;
+  opacity: 0.95;
+}
+.pin2 {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  left: 265px;
+  top: 125px;
+  opacity: 0.95;
+}
+.pin3 {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  left: 245px;
+  top: 155px;
+  opacity: 0.95;
+}
+.pin1:hover {
+  transform: scale(1.4);
+}
+.pin2:hover {
+  transform: scale(1.4);
+}
+.pin3:hover {
+  transform: scale(1.4);
+}
+.region {
+  display: flex;
+  align-self: center;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.cardContainer {
+  display: flex;
+  width: 900px;
+  height: 200px;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-top: 45px;
+}
+
+.cityCard {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  /* border: 3px solid red; */
+  border-radius: 40px;
+  box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff;
+}
+
+.location {
+  display: flex;
+  width: fit-content;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  top: 0;
+}
+
+.city {
+  display: flex;
+  position: absolute;
   color: white;
+  justify-self: center;
+  align-self: center;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.dates {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 15px;
+  color: grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.cityImage {
+  border-radius: 35px;
+  opacity: 0.8;
+  width: 80%;
+  height: 80%;
+}
+img {
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
