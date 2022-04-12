@@ -44,7 +44,7 @@ function App() {
               <img src={Map} />
             </div>
           </div>
-          <div className="msg1">
+          <div className="msg2">
             <span>Live</span> a better life.
           </div>
         </div>
