@@ -4,17 +4,18 @@ import City from "./City.js";
 import Region from "./Region.js";
 import Map from "./map.png";
 import Pin from "./ping.png";
+import PinMap from "./mapPin";
 
 function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://joseph-travel-api.herokuapp.com/api/itineraries")
+    fetch("https://travel-api-renew.herokuapp.com/api/itineraries")
       .then((response) => response.json())
       .then((data) => setData(data));
   }, []);
 
-  const [region, setRegion] = useState("");
+  const [region, setRegion] = useState("none");
 
   const selector = (e) => {
     console.log(e.target.dataset.region);
@@ -30,15 +31,14 @@ function App() {
           </div>
           <div className="mapContainer">
             <div className="clickable" onClick={selector} data-region="">
-              <div className="pin1">
-                <img src={Pin} onClick={selector} data-region="Paris" />
-              </div>
-              <div className="pin2">
-                <img src={Pin} onClick={selector} data-region="New York" />
-              </div>
-              <div className="pin3">
-                <img src={Pin} onClick={selector} data-region="Miami" />
-              </div>
+              {data.map((data) => (
+                <PinMap
+                  name={data.city}
+                  image={Pin}
+                  click={selector}
+                  city={data.city}
+                />
+              ))}
             </div>
             <div className="displayMap">
               <img src={Map} />

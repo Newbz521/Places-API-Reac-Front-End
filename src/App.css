@@ -72,17 +72,7 @@ span {
   padding: 10px;
   /* box-shadow: 20px 20px 60px #d5d5d5, -20px -20px 60px #ffffff; */
 }
-.pin1 {
-  display: flex;
-  width: 35px;
-  height: fit-content;
-  opacity: 1;
-  position: absolute;
-  right: 455px;
-  top: 110px;
-  opacity: 0.95;
-}
-.pin2 {
+.New {
   display: flex;
   width: 35px;
   height: fit-content;
@@ -92,7 +82,23 @@ span {
   top: 125px;
   opacity: 0.95;
 }
-.pin3 {
+.New:hover {
+  transform: scale(1.2);
+}
+.Paris {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  right: 455px;
+  top: 110px;
+  opacity: 0.95;
+}
+.Paris:hover {
+  transform: scale(1.2);
+}
+.Miami {
   display: flex;
   width: 35px;
   height: fit-content;
@@ -102,14 +108,60 @@ span {
   top: 155px;
   opacity: 0.95;
 }
-.pin1:hover {
-  transform: scale(1.4);
+.Miami:hover {
+  transform: scale(1.2);
 }
-.pin2:hover {
-  transform: scale(1.4);
+.Japan {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  left: 690px;
+  top: 140px;
+  opacity: 0.95;
 }
-.pin3:hover {
-  transform: scale(1.4);
+.Japan:hover {
+  transform: scale(1.2);
+}
+.Korea {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  left: 668px;
+  top: 135px;
+  opacity: 0.95;
+}
+.Korea:hover {
+  transform: scale(1.2);
+}
+.Rio {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  left: 320px;
+  top: 275px;
+  opacity: 0.95;
+}
+.Rio:hover {
+  transform: scale(1.2);
+}
+.London {
+  display: flex;
+  width: 35px;
+  height: fit-content;
+  opacity: 1;
+  position: absolute;
+  left: 400px;
+  top: 80px;
+  opacity: 0.95;
+}
+.London:hover {
+  transform: scale(1.2);
 }
 .region {
   display: flex;
