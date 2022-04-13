@@ -81,6 +81,7 @@ span {
   left: 265px;
   top: 125px;
   opacity: 0.95;
+  transition: 0.2s ease-in-out;
 }
 .New:hover {
   transform: scale(1.2);
@@ -94,6 +95,7 @@ span {
   right: 455px;
   top: 110px;
   opacity: 0.95;
+  transition: 0.2s ease-in-out;
 }
 .Paris:hover {
   transform: scale(1.2);
@@ -107,6 +109,7 @@ span {
   left: 245px;
   top: 155px;
   opacity: 0.95;
+  transition: 0.2s ease-in-out;
 }
 .Miami:hover {
   transform: scale(1.2);
@@ -120,6 +123,7 @@ span {
   left: 690px;
   top: 140px;
   opacity: 0.95;
+  transition: 0.2s ease-in-out;
 }
 .Japan:hover {
   transform: scale(1.2);
@@ -133,6 +137,7 @@ span {
   left: 668px;
   top: 135px;
   opacity: 0.95;
+  transition: 0.2s ease-in-out;
 }
 .Korea:hover {
   transform: scale(1.2);
@@ -146,6 +151,7 @@ span {
   left: 320px;
   top: 275px;
   opacity: 0.95;
+  transition: 0.2s ease-in-out;
 }
 .Rio:hover {
   transform: scale(1.2);
@@ -159,6 +165,7 @@ span {
   left: 400px;
   top: 80px;
   opacity: 0.95;
+  transition: 0.2s ease-in-out;
 }
 .London:hover {
   transform: scale(1.2);
@@ -174,7 +181,7 @@ span {
 
 .cardContainer {
   display: flex;
-  width: 900px;
+  width: 90%;
   height: 200px;
   align-items: center;
   justify-content: space-evenly;

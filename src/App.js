@@ -22,6 +22,15 @@ function App() {
     setRegion(e.target.dataset.region);
   };
 
+  const newSite = (e) => {
+    const newWindow = window.open(
+      `https://theplanetd.com/?s=${e.target.innerText}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+    if (newWindow) newWindow.opener = null;
+  };
+
   return (
     <div className="App">
       <div className="pageContainer">
@@ -53,11 +62,13 @@ function App() {
             (data, index) =>
               data.city.includes(region) && (
                 <City
+                  region={data.city}
                   city={data.city}
                   arrival={data.arrival}
                   departure={data.departure}
                   images={data.img}
                   key={index}
+                  clicker={newSite}
                 />
               )
           )}
